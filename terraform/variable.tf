@@ -55,3 +55,14 @@ variable "region" {
   description = "AWS region"
   type        = string
 }
+output "vpc_ids" {
+  value = module.vpc.vpc_ids
+}
+
+output "subnet_ids" {
+  value = module.vpc.subnet_ids
+}
+
+output "transit_gateway_id" {
+  value = module.transit_gateway.transit_gateway_id
+}
